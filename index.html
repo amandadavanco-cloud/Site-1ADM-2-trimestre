@@ -36,10 +36,30 @@
         <h2>O respeito vai além da mesa</h2>
         <p>Seja bem vindo as aulas do Clube de Xadrez de Maringá. Vamos aprender de uma fornma divertida e didática.</p>
         <p>Por: Amanda</p>
+        <button>🕊️​<span>0</span></button>
+
     </main>
     
     
 </body>
+
+<script>
+    const botao = document.querySelector("button");
+    botao.addEventListener("click", botaoClicado);
+   
+    function botaoClicado() {
+        console.log("fui clicado");
+        let texto = botao.querySelector("span");
+        texto.textContent++;
+    }
+
 </html>
+
+
+
+
+
+
+
 
 
